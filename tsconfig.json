@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build/",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "baseUrl": "./source",
+    "paths": {
+      "routes/*": ["./routes/*"],
+      "modules/*": ["./modules/*"]
+    }
+  },
+  "include": ["./source/**/*"],
+  "exclude": ["./source/**/*.test"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
