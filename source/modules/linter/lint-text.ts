@@ -8,7 +8,7 @@ export const lintText = async (
       extends: 'eslint:recommended',
       env: {
         browser: true,
-        es6: true,
+        es2017: true,
       },
     },
   }
