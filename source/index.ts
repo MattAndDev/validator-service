@@ -7,6 +7,6 @@ const fastify = Fastify({
 
 routes(fastify)
 
-fastify.listen({ port: 4242 }, (err) => {
+fastify.listen({ host: '', port: 4242 }, (err) => {
   if (err) throw err
 })
