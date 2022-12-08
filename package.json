@@ -1,7 +1,7 @@
 {
   "name": "validator-service",
-  "version": "1.1.1",
-  "description": "simple microservice to validate a code on the fly",
+  "version": "1.2.0",
+  "description": "simple microservice to validate and minify a code on the fly",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --watch 'source/**/*.ts' --exec 'ts-node' source/index.ts",
@@ -53,6 +53,7 @@
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-virtual": "^2.1.0",
     "core-js": "^3.25.1",
+    "esbuild": "^0.16.2",
     "fastify": "^4.6.0",
     "rollup": "^2.79.0",
     "tsconfig-paths": "^4.1.0"
