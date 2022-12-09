@@ -1,1 +1,1 @@
-export * from './minifier-text'
+export * from './minify-text'
