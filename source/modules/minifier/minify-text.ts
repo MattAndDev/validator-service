@@ -1,15 +1,16 @@
-import { transformSync } from 'esbuild'
+import { Loader, transformSync } from 'esbuild'
 
 export const minifyText = async (
-    code: string
+    code: string,
+    loader: Loader = 'js'
 ): Promise<{
     error: boolean
     code?: string
 }> => {
     try {
-        let resp = await transformSync(code, {
+        const resp = await transformSync(code, {
             minify: true,
-            loader: 'js',
+            loader: loader,
             target: "es2017"
         })
         return { error: false, code: resp.code.trim() }
