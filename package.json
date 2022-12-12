@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch 'source/**/*.ts' --exec 'ts-node' source/index.ts",
     "compile": "tsc",
-    "start": "tsc && node ./build/index.js",
+    "start": "tsc && TS_NODE_BASEURL=./build node -r tsconfig-paths/register  ./build/index.js",
     "test": "jest ./source/*",
     "test:watch": "jest --watch ./source/*"
   },
